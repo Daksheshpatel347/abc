@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.navbar {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:rgb(60, 187, 50); left:800px; top:0px; border-radius: 30%;}
+    50%  {background-color:blue; left:800px; top:400px;}
+    75%  {background-color:green; left:0px; top:400px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  .main{
+    width: 200px;
+    height: 200px;
+    margin: 5% 30% 50% 40%;
+    border:2px solid black; 
+    border-radius: 100; 
+    animation-name: abc;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+
+}
+
+@keyframes abc{
+    50%   {background-color:transparent; left:0px; top:0px;  border-radius: 50%;}
+    100%  {background-color:transparent; left:800px; top:0px; border-radius: 100%;}
+}
+  
+  .dax{
+    width: 50px;
+    height: 50px;
+    background-color:transparent;
+    border: 2px solid rgb(46, 228, 68);
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin: 60px 70px;
+
+  }
+  
+         @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+    
+}
+  </style>
+<body>
+    <div class="navbar">
+</div>
+<div class="main">
+<div class="dax">
+</div>
+</div>
+</body>
+</html>
